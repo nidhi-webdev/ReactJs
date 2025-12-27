@@ -1,3 +1,3 @@
-var h1 = document.createElement("h1")
-h1.innerHTML = "Hello From Js file"
-document.body.appendChild(h1)
+import a from './app.js'
+
+console.log(a);
