@@ -4,7 +4,7 @@
 // 2. Default Export
 
 
-export const arr = [10, 26,78, 90]
+export const arr = [10, 26,78, 90] // Named Export  
 
 const a = 10
 
