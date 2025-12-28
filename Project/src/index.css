@@ -16,3 +16,11 @@ body {
     border-radius: 10px;
     background-color: #333;
 }
+
+.card button {
+    padding: 10px 20px;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+}
