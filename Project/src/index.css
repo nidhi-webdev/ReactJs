@@ -9,7 +9,7 @@ body {
 }
 
 .card {
-    width: 200px;
+    width: 350px;
     border: 1px solid white ;
     padding: 20px;
     text-align: center;
@@ -31,8 +31,8 @@ body {
 }
 
 .card img {
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
     object-fit: cover;
 }
