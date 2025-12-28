@@ -6,9 +6,10 @@ const App = () => {
   const age = 20
 
   return (
-    <div>
-      <h1> Hi Welcome to my New App I am {name} </h1>
-      <p> I am {age} years of old </p>
+    <div className='parent'>
+      <div className='card'>
+        <h1> Nidhi </h1>
+      </div>
     </div>
   )
 }
