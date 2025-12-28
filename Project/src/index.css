@@ -6,6 +6,7 @@ body {
 .parent {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card {
@@ -15,6 +16,7 @@ body {
     text-align: center;
     border-radius: 10px;
     background-color: #333;
+    
 }
 
 .card button {
