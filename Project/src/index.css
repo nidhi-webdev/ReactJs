@@ -38,3 +38,8 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
+
+
+input {
+ padding: 10px
+}
