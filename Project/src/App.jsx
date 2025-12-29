@@ -22,7 +22,8 @@ const App = () => {
   return (
     <div className='parent'>
       {data.map(function (elem) {
-        <Card />
+        return <Card data={elem}/> 
+        
       })}
 
 
