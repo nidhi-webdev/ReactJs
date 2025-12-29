@@ -22,7 +22,7 @@ const App = () => {
   return (
     <div className='parent'>
       {data.map(function (elem) {
-        return <Card data={elem}/> 
+        return <Card data={elem}  /> 
         
       })}
 
