@@ -21,8 +21,8 @@ const App = () => {
 
   return (
     <div className='parent'>
-      {data.map(function (elem) {
-        return <Card data={elem}  /> 
+      {data.map(function (elem, i) {
+        return <Card data={elem} key={i} /> 
         
       })}
 
