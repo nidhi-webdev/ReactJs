@@ -1,17 +1,18 @@
 import React from 'react'
+import { useState } from 'react'
 
 const App = () => {
-  const a = 20;
+  const [num, setNum] = useState("")
 
-  const changeValue = (val) => {
-    console.log("val");
+  const changeValue = () => {
+    setNum(30)
 
   }
 
 
   return (
     <div>
-      <h1 className='text-black'> Value of a is {a} </h1>
+      <h1 className='text-black'> Value of num is {num} </h1>
       <button className='w-32'
         onClick={changeValue}
       >
