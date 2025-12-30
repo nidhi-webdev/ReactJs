@@ -2,14 +2,16 @@ import './index.css';
 
 const App = () => {
 
-  const inputChnage = () => {
-    console.log("Change");
+  const inputChnage = (val) => {
+    console.log(val);
 
   }
 
   return (
     <div>
-      <input placeholder='Enter Name' onChange={inputChnage} />
+      <input placeholder='Enter Name' onChange={(elem) => {
+        inputChnage(elem.target.value)
+      }} />
     </div>
   )
 }
