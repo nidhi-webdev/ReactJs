@@ -1,21 +1,14 @@
-import './index.css';
-import { useState } from 'react';
+import React from 'react'
 
 const App = () => {
-  const [inputValue, setInputValue] = useState("");
+const a = 20;
 
-  const inputChnage = (val) => {
-    setInputValue(val);
-    console.log(val);
-
-  }
 
   return (
     <div>
-      <input placeholder='Enter Name' value={inputValue}
-        onChange={(e) => {
-          inputChnage(e.target.value)
-        }} />
+      <button>
+        click
+      </button>
     </div>
   )
 }
