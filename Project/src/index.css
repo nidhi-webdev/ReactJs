@@ -1,4 +1,4 @@
-
+/* 
 
 .parent {
     display: flex;
@@ -39,4 +39,17 @@
 
 input {
  padding: 10px
+} */
+
+
+button {
+    padding: 10px 20px;
+    margin: 20px;
+}
+
+h1 {
+background-color: black;
+color: whitesmoke;
+width: fit-content;
+padding: 10px 20px;
 }
