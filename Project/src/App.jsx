@@ -2,18 +2,21 @@ import React, { useState } from 'react'
 import './index.css'
 
 const App = () => {
-  const [num, setNum] = useState("2")
+  const [num, setNum] = useState(0)
 
 
 
   const Increase = () => {
-    console.log("Increasing");
+    setNum(num + 1)
 
   }
   const Decrease = () => {
-    console.log("Decreasing")
-
+    setNum(num - 1)
+    if(num <= 0) {
+       setNum(num)
+    }
   }
+  
 
   return (
     <div>
