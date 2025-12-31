@@ -4,10 +4,8 @@ const App = () => {
   const [arr, setArr] = useState([10, 20, 30, 50])
 
   const changearr = () => {
-    const newArr = { ...arr }
-    console.log(newArr);
-
-    newArr[0] = 500
+    const newArr = [...arr ] 
+    newArr.push(500)
     setArr(newArr)
   }
 
