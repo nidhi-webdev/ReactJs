@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
 
 const App = () => {
-  const [arr, setArr] = useState({ user: "Nidhi", age: 20 })
+  const [arr, setArr] = useState([10, 20, 30, 50])
 
-  const changeuser = () => {
+  const changearr = () => {
     const newArr = { ...arr }
     console.log(newArr);
 
-    newArr.user = "Sunidhi"
+    newArr[0] = 500
     setArr(newArr)
   }
 
   return (
     <div>
-      <h1> {arr.user} </h1>
-      <button onClick={changeuser}> Click </button>
+      <h1> {arr} </h1>
+      <button onClick={changearr}> Click </button>
     </div>
   )
 }
