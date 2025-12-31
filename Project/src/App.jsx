@@ -4,14 +4,16 @@ const App = () => {
   const [arr, setArr] = useState({ user: "Nidhi", age: 20 })
 
   const changeuser = () => {
-    const newUser = { ...arr }
-    arr.user = "Sunidhi"
-    setArr(arr)
-}
+    const newArr = { ...arr }
+    console.log(newArr);
+
+    newArr.user = "Sunidhi"
+    setArr(newArr)
+  }
 
   return (
     <div>
-      <h1></h1>
+      <h1> {arr.user} </h1>
       <button onClick={changeuser}> Click </button>
     </div>
   )
