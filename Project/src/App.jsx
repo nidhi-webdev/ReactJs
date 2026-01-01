@@ -9,6 +9,7 @@ const App = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(name);
+    setName('')
   }
 
 
