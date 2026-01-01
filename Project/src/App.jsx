@@ -1,18 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const App = () => {
-  const [arr, setArr] = useState([10, 20, 30, 50])
-
-  const changearr = () => {
-    const newArr = [...arr ] 
-    newArr.push(500)
-    setArr(newArr)
-  }
-
   return (
     <div>
-      <h1> {arr} </h1>
-      <button onClick={changearr}> Click </button>
+      <form>
+        <input type='text' />
+        <input type='text' />
+        <button></button>
+      </form>
     </div>
   )
 }
