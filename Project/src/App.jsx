@@ -1,25 +1,39 @@
 const App = () => {
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log("Hello");
+
+  }
+
   return (
-    <div className='h-screen'>
-
-      <form className='flex p-10 items-start  w-full'>
-        <div className="flex p-10 items-start flex-col gap-4 justify-between w-1/2 ">
-          <input
-            type='text'
-            placeholder='Enter Notes Heading'
-            className='border-2 rounded-xl p-2 w-full'
-          />
-          <textarea
-            className='border-2 rounded-xl h-32 p-2 w-full'
-            placeholder='Enter Details'
-            name=''
-            id=''
-            defaultValue="" />
-          <button className="bg-black text-white w-full px-5 py-3 rounded-xl cursor-pointer"> Add Notes </button>
-        </div>
-        <img className="h-50 rotate-y-180" src="https://static.vecteezy.com/system/resources/thumbnails/049/578/155/small/a-black-and-white-drawing-of-a-man-writing-png.png" />
-
+    <div className='h-screen bg-black text-white flex'>
+      <form className='flex p-10 items-start flex-col gap-4 bg-black w-1/2' onClick={(e) => { handleSubmit(e) }}>
+      <h1 className="text-3xl"> Add Notes </h1>
+        <input
+          type='text'
+          placeholder='Enter Notes Heading'
+          className='border-2 rounded-xl p-2 w-full'
+        />
+        <textarea
+          className='border-2 rounded-xl h-32 p-2 w-full'
+          placeholder='Enter Details'
+          name=''
+          id=''
+          defaultValue="" />
+        <button className="bg-white text-black w-full px-5 py-3 rounded-xl cursor-pointer"> Add Notes </button>
       </form>
+      <div className="bg-gray-800 w-1/2 mt-10 p-4">
+        <h1 className="ml-10 text-3xl"> Your Notes </h1>
+        <div className="flex flex-wrap mt-5 gap-5 overflow-auto">
+          <div className="h-52 w-40 rounded-2xl bg-white   "></div>
+          <div className="h-52 w-40 rounded-2xl bg-white  "></div>
+          <div className="h-52 w-40 rounded-2xl bg-white   "></div>
+          <div className="h-52 w-40 rounded-2xl bg-white "></div>
+          <div className="h-52 w-40 rounded-2xl bg-white  "></div>
+          <div className="h-52 w-40 rounded-2xl bg-white  "></div>
+        </div>
+      </div>
     </div>
   )
 }
