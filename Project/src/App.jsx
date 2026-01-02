@@ -36,8 +36,7 @@ const App = () => {
           className='border-2 rounded-xl h-32 p-2 w-full'
           placeholder='Enter Details'
           name=''
-          id=''
-          defaultValue="" />
+          id='' />
 
         <button className="bg-white text-black w-full px-5 py-3 rounded-xl cursor-pointer active:scale-95"> Add Notes </button>
 
