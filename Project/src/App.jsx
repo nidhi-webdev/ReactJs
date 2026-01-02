@@ -2,10 +2,13 @@ import { useState } from "react"
 
 const App = () => {
   const [tittle, setTittle] = useState(" ")
+  const [detail, setDetail] = useState(" ")
+
 
   const handleSubmit = (e) => {
     e.preventDefault()
     setTittle("")
+    setDetail("")
   }
 
   return (
@@ -26,6 +29,10 @@ const App = () => {
         />
 
         <textarea
+          value={detail}
+          onChange={(e) => {
+            setDetail(e.target.value)
+          }}
           className='border-2 rounded-xl h-32 p-2 w-full'
           placeholder='Enter Details'
           name=''
