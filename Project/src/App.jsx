@@ -3,7 +3,7 @@ import { useState } from "react"
 const App = () => {
   const [tittle, setTittle] = useState(" ")
   const [detail, setDetail] = useState(" ")
-
+  const [task, setTask] = useState([])
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -39,7 +39,7 @@ const App = () => {
           id=''
           defaultValue="" />
 
-        <button className="bg-white text-black w-full px-5 py-3 rounded-xl cursor-pointer"> Add Notes </button>
+        <button className="bg-white text-black w-full px-5 py-3 rounded-xl cursor-pointer active:scale-95"> Add Notes </button>
 
       </form>
 
