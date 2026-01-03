@@ -1,12 +1,16 @@
 import { useState } from "react"
 
 const App = () => {
-  const [tittle, setTittle] = useState(" ")
-  const [detail, setDetail] = useState(" ")
+  const [tittle, setTittle] = useState("")
+  const [detail, setDetail] = useState("")
   const [task, setTask] = useState([])
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    const copyTask = [...task]
+    copyTask.push({ tittle, detail })
+    console.log(copyTask);
+
     setTittle("")
     setDetail("")
   }
@@ -14,7 +18,7 @@ const App = () => {
   return (
     <div className='h-screen bg-black text-white flex'>
 
-      <form className='flex p-10 items-start flex-col gap-4 bg-black w-1/2' onClick={(e) => { handleSubmit(e) }}>
+      <form className='flex p-10 items-start flex-col gap-4 bg-black w-1/2' onSubmit={(e) => { handleSubmit(e) }}>
 
         <h1 className="text-3xl"> Add Notes </h1>
 
