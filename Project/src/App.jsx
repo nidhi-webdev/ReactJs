@@ -51,6 +51,9 @@ const App = () => {
 
         <div className="flex flex-wrap mt-5 gap-5 overflow-auto">
           <div className="h-52 w-40 rounded-2xl bg-white   "></div>
+          {task.map(()=> {
+            return "Hallo"
+          })}
           {/* <div className="h-52 w-40 rounded-2xl bg-white  "></div>
           <div className="h-52 w-40 rounded-2xl bg-white   "></div>
           <div className="h-52 w-40 rounded-2xl bg-white "></div>
