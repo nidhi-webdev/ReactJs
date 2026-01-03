@@ -9,8 +9,7 @@ const App = () => {
     e.preventDefault()
     const copyTask = [...task]
     copyTask.push({ tittle, detail })
-    console.log(copyTask);
-
+    setTask(copyTask)
     setTittle("")
     setDetail("")
   }
@@ -52,11 +51,12 @@ const App = () => {
 
         <div className="flex flex-wrap mt-5 gap-5 overflow-auto">
           <div className="h-52 w-40 rounded-2xl bg-white   "></div>
-          <div className="h-52 w-40 rounded-2xl bg-white  "></div>
+          {/* <div className="h-52 w-40 rounded-2xl bg-white  "></div>
           <div className="h-52 w-40 rounded-2xl bg-white   "></div>
           <div className="h-52 w-40 rounded-2xl bg-white "></div>
           <div className="h-52 w-40 rounded-2xl bg-white  "></div>
-          <div className="h-52 w-40 rounded-2xl bg-white  "></div>
+          <div className="h-52 w-40 rounded-2xl bg-white  "></div> */}
+
         </div>
 
       </div>
