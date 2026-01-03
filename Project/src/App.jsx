@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { X } from 'lucide-react';
 
 const App = () => {
   const [tittle, setTittle] = useState("")
@@ -50,14 +51,15 @@ const App = () => {
         <h1 className="ml-10 text-3xl"> Your Notes </h1>
 
         <div className="flex flex-wrap mt-5 gap-5 overflow-auto">
-         
-          {task.map((elem, idx)=> {
-            return  <div className="bg-cover h-52 w-40 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] " key={idx}>
-            <h3 className="leading-tight pt-10 ml-5 text-black font-bold">{elem.tittle}</h3>
-             <p className="leading-tight font-medium ml-5 text-gray-600">{elem.detail}</p>
+
+          {task.map((elem, idx) => {
+            return <div className="bg-cover h-52 w-40 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] " key={idx}>
+              <h2> <X /> </h2>
+              <h3 className="leading-tight pt-10 ml-5 text-black font-bold">{elem.tittle}</h3>
+              <p className="leading-tight font-medium ml-5 text-gray-600">{elem.detail}</p>
             </div>
           })}
-         
+
 
         </div>
 
