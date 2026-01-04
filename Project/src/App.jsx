@@ -16,10 +16,8 @@ const App = () => {
   }
   const deleteNote = (idx) => {
     const copyTask = [...task]
-    copyTask.splice(idx,1);
+    copyTask.splice(idx,1); // Remove 1 item at index idx ("cherry")
     setTask(copyTask)
-
-
   }
 
   return (
