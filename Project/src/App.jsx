@@ -16,7 +16,8 @@ const App = () => {
   }
   const deleteNote = (idx) => {
     const copyTask = [...task]
-    console.log(copyTask[idx]);
+    copyTask.splice(idx,1);
+    setTask(copyTask)
 
 
   }
