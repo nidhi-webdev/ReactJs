@@ -54,11 +54,9 @@ const App = () => {
 
           {task.map((elem, idx) => {
             return <div className=" relative bg-cover h-52 w-40 rounded-2xl bg-[url('https://static.vecteezy.com/system/resources/previews/037/152/677/non_2x/sticky-note-paper-background-free-png.png')] " key={idx}>
-              <h2 className="text-black absolute top-5 right-5 bg-red-500 p-1 rounded-full">
-                <X strokeWidth={1.75} />
-              </h2>
               <h3 className="leading-tight pt-10 ml-5 text-black font-bold">{elem.tittle}</h3>
               <p className="leading-tight font-medium ml-5 text-gray-600">{elem.detail}</p>
+              <button className="text-white bg-red-500 absolute bottom-2 left-1/2 -translate-x-1/2 px-9 py-2 rounded object-cover cursor-pointer active:scale-95  text-xs font-bold"> Delete </button>
             </div>
           })}
 
