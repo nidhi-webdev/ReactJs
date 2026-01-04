@@ -15,7 +15,7 @@ const App = () => {
     setDetail("")
   }
   const deleteNote = (idx) => {
-    setTask(task.filter((_,i) => i !== idx ))
+    setTask(task.filter((_,i) => i !== idx )) // _ unused but is the task and i is the index 
   }
 
   return (
