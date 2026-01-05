@@ -8,6 +8,10 @@ const App = () => {
 
   localStorage.setItem("user", "Nidhi")
 
+  const user = localStorage.getItem("user")
+  console.log(user);
+  
+
   const handleSubmit = (e) => {
     e.preventDefault()
     const copyTask = [...task]
