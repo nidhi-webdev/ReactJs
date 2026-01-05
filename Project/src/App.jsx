@@ -6,10 +6,19 @@ const App = () => {
   const [detail, setDetail] = useState("")
   const [task, setTask] = useState([])
 
-  localStorage.setItem("user", "Nidhi")
+  // localstorage
 
-  const user = localStorage.getItem("user")
-  console.log(user);
+  const user = {
+    user: "Nidhi",
+    age: 18,
+    city: "Berlin"
+  }
+
+  localStorage.setItem("user", user)
+  
+
+
+
   
 
   const handleSubmit = (e) => {
