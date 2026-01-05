@@ -15,11 +15,13 @@ const App = () => {
   }
 
   localStorage.setItem("user", JSON.stringify(user))
+
+  const data = JSON.parse(localStorage.getItem('user'))
+  console.log(data);
   
 
 
 
-  
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -30,7 +32,7 @@ const App = () => {
     setDetail("")
   }
   const deleteNote = (idx) => {
-    setTask(task.filter((_,i) => i !== idx )) // _ unused but is the task and i is the index 
+    setTask(task.filter((_, i) => i !== idx)) // _ unused but is the task and i is the index 
   }
 
   return (
