@@ -6,6 +6,8 @@ const App = () => {
   const [detail, setDetail] = useState("")
   const [task, setTask] = useState([])
 
+  localStorage.setItem("user", "Nidhi")
+
   const handleSubmit = (e) => {
     e.preventDefault()
     const copyTask = [...task]
