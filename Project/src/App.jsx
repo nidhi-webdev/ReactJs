@@ -14,7 +14,7 @@ const App = () => {
     city: "Berlin"
   }
 
-  localStorage.setItem("user", user)
+  localStorage.setItem("user", JSON.stringify(user))
   
 
 
