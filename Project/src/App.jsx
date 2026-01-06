@@ -15,8 +15,8 @@ const App = () => {
     <div>
       <button onClick={getData}> Get data </button>
       <div>
-        {data.map(() => {
-          return "hello"
+        {data.map((elem, idx) => {
+          return <h3 key={idx}> {elem.author} </h3>
         })}
       </div>
 
