@@ -2,8 +2,8 @@ import axios from 'axios'
 
 const App = () => {
 
-  const getData =  () => {
-   const res = axios.get('https://jsonplaceholder.typicode.com/users')
+  const getData = async () => {
+   const res =await axios.get('https://jsonplaceholder.typicode.com/users')
 console.log(res);
 
   }
