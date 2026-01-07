@@ -10,7 +10,7 @@ const count = () => {
 useEffect(() => {
   console.log("Hello");
   
-})
+}, [])
 
 
   return (
