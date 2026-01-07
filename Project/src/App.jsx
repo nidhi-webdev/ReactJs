@@ -1,25 +1,22 @@
-import axios from 'axios'
-import { useState } from 'react'
+import { useEffect, useState } from "react"
 
 const App = () => {
-  const [data, setData] = useState([])
+const [num, setNum] = useState(0)
 
-  const getData = async () => {
-    const res = await axios.get('https://picsum.photos/v2/list')
-    setData(res.data)
+const count = () => {
+  setNum(num + 1)
+}
 
+useEffect(() => {
+  console.log("Hello");
+  
+})
 
-  }
 
   return (
-    <div>
-      <button onClick={getData}> Get data </button>
-      <div>
-        {data.map((elem, idx) => {
-          return <h3 key={idx}> {elem.author} </h3>
-        })}
-      </div>
-
+    <div className="p-10">
+      <h1 className="bold"> {num} </h1>
+      <button onClick={count} className='bg-amber-500 text-white p-3 rounded-2xl'> Click me </button>
     </div>
   )
 }
