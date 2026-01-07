@@ -12,7 +12,7 @@ const count = () => {
 useEffect(() => {
   console.log("Hello");
   
-}, [])
+}, [num])
 
 
   return (
